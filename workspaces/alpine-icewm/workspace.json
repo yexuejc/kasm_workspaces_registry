@@ -3,13 +3,7 @@
   "docker_registry": "https://ghcr.io/",
   "image_src": "alpine-icewm.png",
   "name": "lscr.io/linuxserver/webtop:alpine-icewm",
-  "run_config": {
-    "security_opt": ["seccomp=unconfined"],
-    "entrypoint": [
-      "/kasminit"
-    ],
-    "user": 1000
-  },
+  "run_config": {},
   "exec_config": {},
   "categories": [
     "Desktop"

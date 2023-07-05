@@ -3,13 +3,7 @@
   "docker_registry": "https://registry.cn-hangzhou.aliyuncs.com/",
   "image_src": "idea.ico",
   "name": "registry.cn-hangzhou.aliyuncs.com/yexuejc/kasm-ubuntu-idea:dev.01",
-  "run_config": {
-    "security_opt": ["seccomp=unconfined"],
-    "entrypoint": [
-      "/kasminit"
-    ],
-    "user": 1000
-  },
+  "run_config": {},
   "exec_config": {},
   "categories": [
     "Desktop"
