@@ -2,6 +2,9 @@
   "description": "基于Ubuntu20.04(core-ubuntu-focal:develop)构建idea",
   "docker_registry": "https://registry.cn-hangzhou.aliyuncs.com/",
   "image_src": "pycharm.png",
+  "cores": 2,
+  "memory": 4096,
+  "gpu_count": 0,
   "name": "registry.cn-hangzhou.aliyuncs.com/yexuejc/kasm-ubuntu-pycharm:dev.02",
   "run_config": {},
   "exec_config": {},
@@ -16,5 +19,5 @@
   "compatibility": [
     "1.13.x"
   ],
-  "uncompressed_size_mb": 2200
+  "uncompressed_size_mb": 10240
 }
