@@ -2,7 +2,7 @@
   "friendly_name": "Developer",
   "image_src": "dev.png",
   "description": "开发环境（idea+vscode+wine）",
-  "name": "registry.cn-chengdu.aliyuncs.com/yexuejc/kasm-ubuntu-develop:dev.03",
+  "name": "registry.cn-chengdu.aliyuncs.com/yexuejc/kasm-ubuntu-develop:dev.04",
   "cores": 2,
   "memory": 4096,
   "gpu_count": 0,
@@ -16,14 +16,23 @@
   "require_gpu": false,
   "enabled": true,
   "image_type": "Container",
-  "run_config": {},
+  "run_config": {
+    "security_opt": [
+      "seccomp=unconfined"
+    ],
+    "entrypoint": [
+      "/kasminit"
+    ],
+    "user": 1000
+  },
   "exec_config": {},
   "architecture": [
     "amd64",
     "arm64"
   ],
   "compatibility": [
-    "1.13.x"
+    "1.13.x",
+    "1.14.x"
   ],
   "uncompressed_size_mb": 10240
 }
