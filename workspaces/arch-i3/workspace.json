@@ -2,7 +2,6 @@
   "description": "Arch with the i3 desktop environment.",
   "docker_registry": "https://ghcr.io/",
   "image_src": "arch-i3.png",
-  "name": "lscr.io/linuxserver/webtop:arch-i3",
   "run_config": {
     "security_opt": [
       "seccomp=unconfined"
@@ -10,7 +9,10 @@
     "entrypoint": [
       "/kasminit"
     ],
-    "user": 1000
+    "user": 1000,
+    "environment": {
+      "HOME": "/home/kasm-user"
+    }
   },
   "exec_config": {},
   "categories": [
@@ -22,8 +24,15 @@
     "arm64"
   ],
   "compatibility": [
-    "1.13.x",
-    "1.14.x"
-  ],
-  "uncompressed_size_mb": 2530
+    {
+      "version": "1.16.x",
+      "image": "lscr.io/linuxserver/webtop:arch-i3",
+      "uncompressed_size_mb": 2530
+    },
+    {
+      "version": "1.17.x",
+      "image": "lscr.io/linuxserver/webtop:arch-i3",
+      "uncompressed_size_mb": 2530
+    }
+  ]
 }

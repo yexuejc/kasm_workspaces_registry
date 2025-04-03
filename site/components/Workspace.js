@@ -6,7 +6,7 @@ function Workspace({ Component, pageProps, workspace }) {
     const viewexample = (workspace) => {
         router.push({
             pathname: '/new/[workspace]',
-            query: { workspace: btoa(workspace.name)}
+            query: { workspace: btoa(workspace.friendly_name)}
         })
     }
     
