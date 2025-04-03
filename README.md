@@ -193,9 +193,17 @@ Workspace Name
     "arm64"
   ],
   "compatibility": [
-    "1.13.x"
-  ],
-  "uncompressed_size_mb": 2170
+    {
+      "version": "1.16.x",
+      "image": "kasmweb/vs-code:develop",
+      "uncompressed_size_mb": 5120
+    },
+    {
+      "version": "1.17.x",
+      "image": "kasmweb/vs-code:develop",
+      "uncompressed_size_mb": 5120
+    }
+  ]
 }
 ```
 
