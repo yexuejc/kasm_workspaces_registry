@@ -1,6 +1,6 @@
 {
   "description": "Centos7 with the XFCE desktop environment.",
-  "docker_registry": "https://ghcr.io/",
+  "docker_registry": "https://registry.cn-chengdu.aliyuncs.com/",
   "image_src": "centos.png",
   "run_config": {
     "security_opt": [
@@ -26,12 +26,12 @@
   "compatibility": [
     {
       "version": "1.16.x",
-      "image": "lscr.io/linuxserver/webtop:debian-kde",
+      "image": "registry.cn-chengdu.aliyuncs.com/yexuejc/kasm-centos-desktop:dev.01",
       "uncompressed_size_mb": 2170
     },
     {
       "version": "1.17.x",
-      "image": "lscr.io/linuxserver/webtop:debian-kde",
+      "image": "registry.cn-chengdu.aliyuncs.com/yexuejc/kasm-centos-desktop:dev.01",
       "uncompressed_size_mb": 2170
     }
   ]
