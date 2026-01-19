@@ -1,6 +1,8 @@
 /** @type {import('next').NextConfig} */
 
 const nextConfig = {
+  output: 'export',
+  distDir: '../public',
   env: {
     name: 'Server By yexuejc',
     description: 'Kasm workspaces provided by LSIO expertise',
@@ -9,8 +11,8 @@ const nextConfig = {
     contactUrl: 'https://github.com/yexuejc/kasm_workspaces_registry',
   },
   reactStrictMode: true,
-  swcMinify: true,
-  basePath: '/kasm_workspaces_registry/1.0',
+  basePath: '/1.0',
+  assetPrefix: '/1.0',
   trailingSlash: true,
   images: {
     unoptimized: true,
