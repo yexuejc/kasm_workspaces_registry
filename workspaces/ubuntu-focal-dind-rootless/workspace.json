@@ -4,7 +4,16 @@
   "image_src": "ubuntu.png",
   "name": "kasmweb/ubuntu-focal-dind-rootless:1.16.1",
   "run_config": {
-    "hostname": "kasm"
+    "security_opt": [
+      "seccomp=unconfined"
+    ],
+    "entrypoint": [
+      "/kasminit"
+    ],
+    "user": 1000,
+    "environment": {
+      "HOME": "/home/kasm-user"
+    }
   },
   "exec_config": {},
   "categories": [
@@ -25,6 +34,11 @@
     },
     {
       "version": "1.17.x",
+      "image": "kasmweb/ubuntu-focal-dind-rootless:1.16.1",
+      "uncompressed_size_mb": 2200
+    },
+    {
+      "version": "1.18.x",
       "image": "kasmweb/ubuntu-focal-dind-rootless:1.16.1",
       "uncompressed_size_mb": 2200
     }

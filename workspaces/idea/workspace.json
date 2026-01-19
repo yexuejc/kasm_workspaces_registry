@@ -2,11 +2,19 @@
   "description": "基于Ubuntu20.04(core-ubuntu-focal:develop)构建idea",
   "docker_registry": "https://registry.cn-hangzhou.aliyuncs.com/",
   "image_src": "idea.ico",
-  "cores": 2,
-  "memory": 4096,
-  "gpu_count": 0,
   "name": "registry.cn-hangzhou.aliyuncs.com/yexuejc/kasm-ubuntu-idea:openjdk17",
-  "run_config": {},
+  "run_config": {
+    "security_opt": [
+      "seccomp=unconfined"
+    ],
+    "entrypoint": [
+      "/kasminit"
+    ],
+    "user": 1000,
+    "environment": {
+      "HOME": "/home/kasm-user"
+    }
+  },
   "exec_config": {},
   "categories": [
     "Desktop"
@@ -20,12 +28,17 @@
     {
       "version": "1.16.x",
       "image": "registry.cn-hangzhou.aliyuncs.com/yexuejc/kasm-ubuntu-idea:openjdk17",
-      "uncompressed_size_mb": 5120
+      "uncompressed_size_mb": 2530
     },
     {
       "version": "1.17.x",
       "image": "registry.cn-hangzhou.aliyuncs.com/yexuejc/kasm-ubuntu-idea:openjdk17",
-      "uncompressed_size_mb": 5120
+      "uncompressed_size_mb": 2530
+    },
+    {
+      "version": "1.18.x",
+      "image": "registry.cn-hangzhou.aliyuncs.com/yexuejc/kasm-ubuntu-idea:openjdk17",
+      "uncompressed_size_mb": 2530
     }
   ]
 }

@@ -3,9 +3,6 @@
   "image_src": "dev.png",
   "description": "开发环境（idea+vscode+wine）",
   "name": "registry.cn-chengdu.aliyuncs.com/yexuejc/kasm-ubuntu-develop:dev.04",
-  "cores": 2,
-  "memory": 4096,
-  "gpu_count": 0,
   "cpu_allocation_method": "Inherit",
   "docker_registry": "https://registry.cn-chengdu.aliyuncs.com/",
   "categories": [
@@ -23,7 +20,10 @@
     "entrypoint": [
       "/kasminit"
     ],
-    "user": 1000
+    "user": 1000,
+    "environment": {
+      "HOME": "/home/kasm-user"
+    }
   },
   "exec_config": {},
   "architecture": [
@@ -34,12 +34,17 @@
     {
       "version": "1.16.x",
       "image": "registry.cn-chengdu.aliyuncs.com/yexuejc/kasm-ubuntu-develop:dev.04",
-      "uncompressed_size_mb": 5120
+      "uncompressed_size_mb": 2530
     },
     {
       "version": "1.17.x",
       "image": "registry.cn-chengdu.aliyuncs.com/yexuejc/kasm-ubuntu-develop:dev.04",
-      "uncompressed_size_mb": 5120
+      "uncompressed_size_mb": 2530
+    },
+    {
+      "version": "1.18.x",
+      "image": "registry.cn-chengdu.aliyuncs.com/yexuejc/kasm-ubuntu-develop:dev.04",
+      "uncompressed_size_mb": 2530
     }
   ]
 }

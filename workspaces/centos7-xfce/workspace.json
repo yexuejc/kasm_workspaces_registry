@@ -27,12 +27,17 @@
     {
       "version": "1.16.x",
       "image": "registry.cn-chengdu.aliyuncs.com/yexuejc/kasm-centos-desktop:dev.01",
-      "uncompressed_size_mb": 2170
+      "uncompressed_size_mb": 1250
     },
     {
       "version": "1.17.x",
       "image": "registry.cn-chengdu.aliyuncs.com/yexuejc/kasm-centos-desktop:dev.01",
-      "uncompressed_size_mb": 2170
+      "uncompressed_size_mb": 1250
+    },
+    {
+      "version": "1.18.x",
+      "image": "registry.cn-chengdu.aliyuncs.com/yexuejc/kasm-centos-desktop:dev.01",
+      "uncompressed_size_mb": 1250
     }
   ]
 }
